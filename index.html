@@ -4,11 +4,231 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site</title>
+  <title>Countries</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize-mini.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="site-header py-3 shadow-sm bg-white">
+    <div class="site-header__container container-xl d-flex justify-content-between">
+      <a class="site-header__link font-weight-bold text-dark " href="#">Where in the world?</a>
+      <button class="site-header__btn text-capitalize bg-transparent border-0 pl-4">Dark mode</button>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="site-main__container pt-5">
+
+      <div class="container-xl">
+        <form class="site-main__form  row d-flex justify-content-between pb-6" action="https://echo.htmlacademy.ru" method="post">
+        
+          <div class="form-group col-4">
+            <label for="country-search" class="sr-only">Search for a country</label>
+            <input class="form-control shadow-sm" type="text" id="country-search" placeholder="Search for a country…">
+          </div>
+          <div class="dropdown">
+            <button class="btn bg-white dropdown-toggle shadow-sm" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Filter by Region</button>
+            <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenu1">
+              <a class="dropdown-item" href="#!">Africa</a>
+              <a class="dropdown-item" href="#!">America</a>
+              <a class="dropdown-item" href="#!">Asia</a>
+              <a class="dropdown-item" href="#!">Europe</a>
+              <a class="dropdown-item" href="#!">Oceania</a>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <section class="country-card">
+        <div class="container">
+          <ul class="country-card__list row p-0 container">
+            <li class="country-card__item card col-2 p-0 overflow-hidden">
+              <img class="country-card__img img-fluid d-block w-100" src="https://picsum.photos/267/160" alt="flag of germany" width="264" height="160">
+              <div class="card-body">
+                <h2 class="card-title h6 font-weight-bolder">Germany</h2>
+                <table class="table table-reflow">
+                  <tbody>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Population:</th>
+                      <td class="table-body border-0 py-1 p-0">81,770,900</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Region:</th>
+                      <td class="table-body border-0 py-1 p-0">Europe</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Capital:</th>
+                      <td class="table-body border-0 py-1 p-0">Berlin</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="country-card__item card col-2 p-0 overflow-hidden">
+              <img class="country-card__img img-fluid d-block w-100" src="https://picsum.photos/267/160" alt="flag of germany" width="264" height="160">
+              <div class="card-body">
+                <h2 class="card-title h6 font-weight-bolder">Germany</h2>
+                <table class="table table-reflow">
+                  <tbody>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Population:</th>
+                      <td class="table-body border-0 py-1 p-0">81,770,900</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Region:</th>
+                      <td class="table-body border-0 py-1 p-0">Europe</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Capital:</th>
+                      <td class="table-body border-0 py-1 p-0">Berlin</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="country-card__item card col-2 p-0 overflow-hidden">
+              <img class="country-card__img img-fluid d-block w-100" src="https://picsum.photos/267/160" alt="flag of germany" width="264" height="160">
+              <div class="card-body">
+                <h2 class="card-title h6 font-weight-bolder">Germany</h2>
+                <table class="table table-reflow">
+                  <tbody>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Population:</th>
+                      <td class="table-body border-0 py-1 p-0">81,770,900</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Region:</th>
+                      <td class="table-body border-0 py-1 p-0">Europe</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Capital:</th>
+                      <td class="table-body border-0 py-1 p-0">Berlin</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="country-card__item card col-2 p-0 overflow-hidden">
+              <img class="country-card__img img-fluid d-block w-100" src="https://picsum.photos/267/160" alt="flag of germany" width="264" height="160">
+              <div class="card-body">
+                <h2 class="card-title h6 font-weight-bolder">Germany</h2>
+                <table class="table table-reflow">
+                  <tbody>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Population:</th>
+                      <td class="table-body border-0 py-1 p-0">81,770,900</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Region:</th>
+                      <td class="table-body border-0 py-1 p-0">Europe</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Capital:</th>
+                      <td class="table-body border-0 py-1 p-0">Berlin</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="country-card__item card col-2 p-0 overflow-hidden">
+              <img class="country-card__img img-fluid d-block w-100" src="https://picsum.photos/267/160" alt="flag of germany" width="264" height="160">
+              <div class="card-body">
+                <h2 class="card-title h6 font-weight-bolder">Germany</h2>
+                <table class="table table-reflow">
+                  <tbody>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Population:</th>
+                      <td class="table-body border-0 py-1 p-0">81,770,900</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Region:</th>
+                      <td class="table-body border-0 py-1 p-0">Europe</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Capital:</th>
+                      <td class="table-body border-0 py-1 p-0">Berlin</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="country-card__item card col-2 p-0 overflow-hidden">
+              <img class="country-card__img img-fluid d-block w-100" src="https://picsum.photos/267/160" alt="flag of germany" width="264" height="160">
+              <div class="card-body">
+                <h2 class="card-title h6 font-weight-bolder">Germany</h2>
+                <table class="table table-reflow">
+                  <tbody>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Population:</th>
+                      <td class="table-body border-0 py-1 p-0">81,770,900</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Region:</th>
+                      <td class="table-body border-0 py-1 p-0">Europe</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Capital:</th>
+                      <td class="table-body border-0 py-1 p-0">Berlin</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="country-card__item card col-2 p-0 overflow-hidden">
+              <img class="country-card__img img-fluid d-block w-100" src="https://picsum.photos/267/160" alt="flag of germany" width="264" height="160">
+              <div class="card-body">
+                <h2 class="card-title h6 font-weight-bolder">Germany</h2>
+                <table class="table table-reflow">
+                  <tbody>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Population:</th>
+                      <td class="table-body border-0 py-1 p-0">81,770,900</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Region:</th>
+                      <td class="table-body border-0 py-1 p-0">Europe</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Capital:</th>
+                      <td class="table-body border-0 py-1 p-0">Berlin</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="country-card__item card col-2 p-0 overflow-hidden mw-25">
+              <img class="country-card__img img-fluid d-block w-100" src="https://picsum.photos/267/160" alt="flag of germany" width="264" height="160">
+              <div class="card-body">
+                <h2 class="card-title h6 font-weight-bolder">Germany</h2>
+                <table class="table table-reflow">
+                  <tbody>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Population:</th>
+                      <td class="table-body border-0 py-1 p-0">81,770,900</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Region:</th>
+                      <td class="table-body border-0 py-1 p-0">Europe</td>
+                    </tr>
+                    <tr>
+                      <th class="table-head border-0 py-1 p-0" scope="row">Capital:</th>
+                      <td class="table-body border-0 py-1 p-0">Berlin</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+
   
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
